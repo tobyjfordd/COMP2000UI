@@ -40,9 +40,9 @@ public class EmployeeDashboardActivity extends AppCompatActivity {
 
         // VIEW YOUR REQUESTS BUTTON
 
-        Button employeeViewYourRequestsBtn = findViewById(R.id.button_view_your_requests);
+        Button viewYourRequestsBtn = findViewById(R.id.button_view_your_requests);
 
-        employeeViewYourRequestsBtn.setOnClickListener(new View.OnClickListener()
+        viewYourRequestsBtn.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
@@ -54,14 +54,28 @@ public class EmployeeDashboardActivity extends AppCompatActivity {
 
         // VIEW YOUR BOOKINGS BUTTON
 
-        Button employeeViewYourBookingsBtn = findViewById(R.id.button_view_your_bookings);
+        Button viewYourBookingsBtn = findViewById(R.id.button_view_your_bookings);
 
-        employeeViewYourBookingsBtn.setOnClickListener(new View.OnClickListener()
+        viewYourBookingsBtn.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
                 Intent intent = new Intent(EmployeeDashboardActivity.this, EmployeeViewBookingsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // REQUEST BOOKING BUTTON
+
+        Button requestBookingBtn = findViewById(R.id.button_request_booking);
+
+        requestBookingBtn.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(EmployeeDashboardActivity.this, EmployeeRequestBookingActivity.class);
                 startActivity(intent);
             }
         });

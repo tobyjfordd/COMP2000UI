@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_employee_request_booking"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeRequestBookingActivity">
+
+    <Spinner
+        android:id="@+id/spinner_duration_minute"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_duration_hour"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/spinner_duration_hour" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_duration_hour"
+        app:layout_constraintStart_toEndOf="@+id/spinner_duration_hour"
+        app:layout_constraintTop_toTopOf="@+id/spinner_duration_hour"
+        app:layout_constraintVertical_bias="0.41000003" />
+
+    <Spinner
+        android:id="@+id/spinner_duration_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textview_duration"
+        app:layout_constraintStart_toEndOf="@+id/textview_duration"
+        app:layout_constraintTop_toTopOf="@+id/textview_duration" />
+
+    <TextView
+        android:id="@+id/textview_request_booking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Request Booking"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Start time"
+        android:textSize="28sp"
+        app:layout_constraintStart_toEndOf="@+id/calendarview_date"
+        app:layout_constraintTop_toBottomOf="@+id/button_back" />
+
+    <Spinner
+        android:id="@+id/spinner_start_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textview_start_time"
+        app:layout_constraintStart_toEndOf="@+id/textview_start_time"
+        app:layout_constraintTop_toTopOf="@+id/textview_start_time" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text=":"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_start_hour"
+        app:layout_constraintStart_toEndOf="@+id/spinner_start_hour"
+        app:layout_constraintTop_toTopOf="@+id/spinner_start_hour"
+        app:layout_constraintVertical_bias="0.41000003" />
+
+    <Spinner
+        android:id="@+id/spinner_start_minute"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textview_start_time"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/textview_start_time" />
+
+    <TextView
+        android:id="@+id/textview_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Duration"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@+id/textview_start_time"
+        app:layout_constraintTop_toBottomOf="@+id/textview_start_time" />
+
+    <CalendarView
+        android:id="@+id/calendarview_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_back" />
+
+    <TextView
+        android:id="@+id/textview_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/calendarview_date"
+        app:layout_constraintEnd_toEndOf="@+id/calendarview_date"
+        app:layout_constraintStart_toStartOf="@+id/calendarview_date"
+        app:layout_constraintTop_toBottomOf="@+id/button_back" />
+
+    <Button
+        android:id="@+id/button_view_available_rooms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Available Rooms"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/calendarview_date"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_duration_hour" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

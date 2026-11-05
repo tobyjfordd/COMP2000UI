@@ -61,7 +61,7 @@ public class EmployeeDashboardActivity extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                Intent intent = new Intent(EmployeeDashboardActivity.this, EmployeeViewRequestsActivity.class);
+                Intent intent = new Intent(EmployeeDashboardActivity.this, EmployeeViewBookingsActivity.class);
                 startActivity(intent);
             }
         });

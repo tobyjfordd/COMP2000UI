@@ -1,6 +1,9 @@
 package com.example.comp2000ui;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +22,44 @@ public class EmployeeViewBookingsActivity extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+
+        // BACK BUTTON
+
+        Button employeeBackBtn = findViewById(R.id.button_back);
+
+        employeeBackBtn.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(EmployeeViewBookingsActivity.this, EmployeeDashboardActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // REQUEST CANCELLATION BUTTONS
+
+        Button cancelBtn1 = findViewById(R.id.button_request_cancellation_1);
+
+        cancelBtn1.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                ((Button)v).setText("Cancellation Requested");
+            }
+        });
+
+        Button cancelBtn2 = findViewById(R.id.button_request_cancellation_2);
+
+        cancelBtn2.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                ((Button)v).setText("Cancellation Requested");
+            }
         });
     }
 }

@@ -39,7 +39,7 @@
                     android:layout_marginEnd="5dp"
                     android:orientation="vertical"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/button_request_cancellation_1"
+                    app:layout_constraintEnd_toStartOf="@+id/button_request_room_1"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
@@ -64,7 +64,7 @@
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/button_request_cancellation_1"
+                    android:id="@+id/button_request_room_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Request Cancellation"
@@ -86,7 +86,7 @@
                     android:layout_marginEnd="5dp"
                     android:orientation="vertical"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/button_request_cancellation_2"
+                    app:layout_constraintEnd_toStartOf="@+id/button_request_room_2"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
@@ -111,7 +111,7 @@
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/button_request_cancellation_2"
+                    android:id="@+id/button_request_room_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Request Cancellation"

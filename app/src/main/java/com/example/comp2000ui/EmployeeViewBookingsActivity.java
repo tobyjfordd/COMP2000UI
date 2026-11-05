@@ -40,7 +40,7 @@ public class EmployeeViewBookingsActivity extends AppCompatActivity {
 
         // REQUEST CANCELLATION BUTTONS
 
-        Button cancelBtn1 = findViewById(R.id.button_request_cancellation_1);
+        Button cancelBtn1 = findViewById(R.id.button_request_room_1);
 
         cancelBtn1.setOnClickListener(new View.OnClickListener()
         {
@@ -51,7 +51,7 @@ public class EmployeeViewBookingsActivity extends AppCompatActivity {
             }
         });
 
-        Button cancelBtn2 = findViewById(R.id.button_request_cancellation_2);
+        Button cancelBtn2 = findViewById(R.id.button_request_room_2);
 
         cancelBtn2.setOnClickListener(new View.OnClickListener()
         {

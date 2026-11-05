@@ -13,6 +13,11 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class EmployeeViewAvailableRoomsActivity extends AppCompatActivity {
 
+    void BackToDashboardAppear()
+    {
+        findViewById(R.id.button_back_to_dashboard).setVisibility(View.VISIBLE);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +38,7 @@ public class EmployeeViewAvailableRoomsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                Intent intent = new Intent(EmployeeViewAvailableRoomsActivity.this, EmployeeDashboardActivity.class);
+                Intent intent = new Intent(EmployeeViewAvailableRoomsActivity.this, EmployeeRequestBookingActivity.class);
                 startActivity(intent);
             }
         });
@@ -48,6 +53,7 @@ public class EmployeeViewAvailableRoomsActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 requestBtn1.setText("Room Requested");
+                BackToDashboardAppear();
             }
         });
 
@@ -59,6 +65,21 @@ public class EmployeeViewAvailableRoomsActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 requestBtn2.setText("Room Requested");
+                BackToDashboardAppear();
+            }
+        });
+
+        // BACK TO DASHBOARD BUTTON
+
+        Button backToDashboardBtn = findViewById(R.id.button_back_to_dashboard);
+
+        backToDashboardBtn.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(EmployeeViewAvailableRoomsActivity.this, EmployeeDashboardActivity.class);
+                startActivity(intent);
             }
         });
     }

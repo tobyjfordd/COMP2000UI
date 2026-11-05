@@ -26,9 +26,9 @@ public class EmployeeViewRequestsActivity extends AppCompatActivity {
 
         // BACK BUTTON
 
-        Button employeeLoginSelectBtn = findViewById(R.id.button_back);
+        Button employeeBackBtn = findViewById(R.id.button_back);
 
-        employeeLoginSelectBtn.setOnClickListener(new View.OnClickListener()
+        employeeBackBtn.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)

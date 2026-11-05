@@ -40,9 +40,9 @@ public class EmployeeLoginActivity extends AppCompatActivity {
 
         // LOGIN BUTTON
 
-        Button employeeLoginSelectBtn = findViewById(R.id.button_login);
+        Button employeeLoginBtn = findViewById(R.id.button_login);
 
-        employeeLoginSelectBtn.setOnClickListener(new View.OnClickListener()
+        employeeLoginBtn.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)

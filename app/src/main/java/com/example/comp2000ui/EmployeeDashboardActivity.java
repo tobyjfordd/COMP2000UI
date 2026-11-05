@@ -40,9 +40,23 @@ public class EmployeeDashboardActivity extends AppCompatActivity {
 
         // VIEW YOUR REQUESTS BUTTON
 
-        Button employeeLoginSelectBtn = findViewById(R.id.button_view_your_requests);
+        Button employeeViewYourRequestsBtn = findViewById(R.id.button_view_your_requests);
 
-        employeeLoginSelectBtn.setOnClickListener(new View.OnClickListener()
+        employeeViewYourRequestsBtn.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(EmployeeDashboardActivity.this, EmployeeViewRequestsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // VIEW YOUR BOOKINGS BUTTON
+
+        Button employeeViewYourBookingsBtn = findViewById(R.id.button_view_your_bookings);
+
+        employeeViewYourBookingsBtn.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
